@@ -19,7 +19,7 @@ def digit_to_text(digit):
 def main():
     with open("laba.txt", "r") as file:
         data = file.read()
-        regul = r'\b\d{1,5}3\d*'                    #регулярное выражение
+        regul = "\d3\d{5}"                    #регулярное выражение
         numbers = re.findall(regul, data)
 
         for number in numbers:
